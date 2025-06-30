@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  transition: background 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 30px auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dark .chat-container {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #212223;
+  color: white;
+  align-items: center;
+}
+
+#chatBox {
+  height: 400px;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 10px;
+}
+
+.avatar.user {
+  background-image: url('https://png.pngtree.com/png-vector/20191104/ourlarge/pngtree-businessman-avatar-cartoon-style-png-image_1953664.jpg');
+}
+
+.avatar.bot {
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkgV5ao3XFRRLfs7Kf6E21ZWEEXrzJo4FWjolcOTN_q4RWcLYVEoGlVn9aj8OVNh95z1RD3OIwHKbAe6RJknCWGRyENYzsFhwPJlCmNICJiFbLpaYFzEcVTcgC6WgvfWgTA8utLH7oD84kyGIxmLXApmwBnfS8ZGggDr0IzqLeeXtP494/s1600/Screenshot_2020-05-06-08-10-37-722_com.png');
+}
+
+.text {
+  background: #e0e0e0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.dark .text {
+  background: #333;
+  color: white;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 12px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.chat-form button {
+  padding: 10px 16px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.toggle-bar {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+#youtubeToggle.active {
+  background-color: #cc0000;
+  color: white;
+}
+.chat-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: var(--bg);
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e2e2e2;
+}
+
+.toggle-btn.active {
+  background-color: #10a37f;
+  color: #fff;
+}
+body.dark .toggle-btn {
+  background-color: #333;
+  color: #eee;
+}
+body.dark .toggle-btn.active {
+  background-color: #10a37f;
+}
